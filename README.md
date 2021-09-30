@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: git-sync
-        uses: wei/git-sync@v3
+        uses: Melostat/git-sync@v3
         with:
           source_repo: "source_org/repository"
           source_branch: "main"
@@ -103,10 +103,6 @@ destination_branch: "refs/tags/*"
 $ docker run --rm -e "SSH_PRIVATE_KEY=$(cat ~/.ssh/id_rsa)" $(docker build -q .) \
   $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
 ```
-
-## Author
-
-[Wei He](https://github.com/wei) _github@weispot.com_
 
 ## License
 
